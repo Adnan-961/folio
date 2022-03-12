@@ -2,7 +2,7 @@
   "name": "hello",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://adnan-961.github.io/portfolio",
+  "homepage": "http://adnan-961.github.io/adnan-961.github.io.git",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@emotion/react": "^11.8.2",
@@ -50,7 +50,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
+  "dev	Dependencies": {
     "gh-pages": "^3.2.3"
   }
 }
