@@ -4,7 +4,22 @@ import * as THREE from "three";
 import Fade from 'react-reveal/Fade';
 import Skills from "./Skills";
 import Navbar from "./Navbar";
+import Typewriter from 'typewriter-effect';
 export default function Landing() {
+let phrase =   <Typewriter
+onInit={(typewriter) => {
+  typewriter
+  
+    .typeString("Adnan")
+    .callFunction((state) => {
+       // turn off animation
+       state.elements.cursor.style.animation = 'none'
+       // hide cursor
+       state.elements.cursor.style.display = 'none'
+    })
+    .start()
+}}
+/>
   useEffect(() => {
     const canvas = document.querySelector("canvas.webgl");
 
@@ -119,6 +134,8 @@ export default function Landing() {
 
     tick();
   }, []);
+
+
   return (
     <>
       <section>
@@ -130,7 +147,7 @@ export default function Landing() {
             <Fade top>
               <h1>
              
-                Hey, I'm <span>Adnan.</span>
+                Hey, I'm {"‏‏"}{phrase}.
                 
               </h1></Fade>
               <Fade top>
@@ -236,6 +253,7 @@ export default function Landing() {
         </div>
       </section>
       <Skills />
+     
     </>
   );
 }

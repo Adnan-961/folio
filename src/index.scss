@@ -10,6 +10,7 @@
 * > a {
   text-decoration: none;
 }
+
 body {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -56,6 +57,12 @@ body {
   margin-top: 10px;
   width: 100%;
   font-weight: 500;
+}
+.content>h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% ;
 }
 .icons {
   display: flex;
